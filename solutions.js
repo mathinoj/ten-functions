@@ -45,10 +45,17 @@ function isEven(input){
 	}
 }
 
-// Define a function named isIdentical that takes in two input arguments. If each input is equal both in data type and in value, then return true. If the values are not the same data type or not the same value, return false.
-
 function isIdentical(inputOne, inputTwo){
 	if(inputOne === inputTwo){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Define a function named isEqual that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
+function isEqual(input1, input2){
+	if(input1 == input2){
 		return true;
 	} else {
 		return false;
