@@ -52,12 +52,38 @@ function isIdentical(inputOne, inputTwo){
 		return false;
 	}
 }
-
-// Define a function named isEqual that takes in two input arguments. If each argument is equal only in value, then return true. Otherwise return false.
 function isEqual(input1, input2){
 	if(input1 == input2){
 		return true;
 	} else {
 		return false;
+	}
+}
+
+// Define a function named or that takes in two input arguments. The output returned should be the result of an or operation on both inputs.
+function or(inputA, inputB){
+	if(inputA === true || inputB === true){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Define a function named and that takes in two input arguments and returns the result of a logical and operation of both inputs.
+function and(inputOne, inputTwo){
+	if(inputOne == true && inputTwo == true){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// Define a function named concat that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
+function concat(inputCon, inputCat){
+	let x = inputCon.toString()
+	let y = inputCat.toString()
+	console.log(typeof x)
+	if(x !== "" && y !== ""){
+		return x + y;
 	}
 }
