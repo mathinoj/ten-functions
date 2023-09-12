@@ -23,3 +23,7 @@
 function isTrue(input){
 	return input === true;
 }
+
+function isFalse(value){
+	return value === false;
+}
