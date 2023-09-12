@@ -28,9 +28,8 @@ function isFalse(value){
 	return value === false;
 }
 
-//Define a function named not that takes in any input and returns the boolean opposite of the provided input.
 function not(input){
-	return input !== true;
+	return !input;
 }
 
 function addOne(input){
@@ -71,14 +70,13 @@ function or(inputA, inputB){
 
 // Define a function named and that takes in two input arguments and returns the result of a logical and operation of both inputs.
 function and(inputOne, inputTwo){
-	if(inputOne == true && inputTwo == true){
+	if(inputOne != "" && inputTwo != "") {
 		return true;
 	} else {
 		return false;
 	}
 }
 
-// Define a function named concat that takes in two input arguments. If both arguments are strings, then return the concatenated result. If two numbers are provided, then return the string concatenation of each set of numerals.
 function concat(inputCon, inputCat){
 	let x = inputCon.toString()
 	let y = inputCat.toString()
